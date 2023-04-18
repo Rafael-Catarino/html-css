@@ -1,0 +1,40 @@
+.revenues {
+  align-items: center;
+  background-color: #e5e5e5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.revenues__revenue {
+  background-color: #fdfdfd;
+  border: 1px solid black;
+  margin: 50px;
+  width: 286px;
+}
+
+.revenues__title {
+  margin: 10px;
+}
+
+.revenues__about {
+  font-size: 1.1875rem;
+  line-height: 1.5;
+  margin: 5px 10px;
+  text-align: justify;
+}
+
+.revenues__button {
+  background-color: #8d0606;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+}
+
+.revenues__button:hover {
+  cursor: pointer;
+  background-color: #620404;
+  transition: background-color 1s;
+}
