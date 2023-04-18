@@ -1,0 +1,69 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+main {
+  margin: auto;
+  width: 940px;
+}
+
+.form {
+  margin: 40px;
+}
+
+.label-padrao,
+.input-padrao {
+  display: block;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 70vw;
+}
+
+
+.input-padrao {
+  border-radius: 10px;
+  border-bottom: 2px solid black;
+}
+
+.select-padrao {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.btn-form {
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.btn-form:hover {
+  background-color: #c78c19;
+  transform: scale(1.05);
+}
+
+fieldset {
+  border: none;
+}
+
+
+.table {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 2px;
+}
+
+.table td,
+.table th {
+  border: 2px solid black;
+  padding: 5px;
+}
+
+
