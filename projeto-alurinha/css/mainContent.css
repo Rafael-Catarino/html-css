@@ -1,0 +1,115 @@
+.mainContent .container {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.mainContent-course {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.mainContent-course-link {
+  width: 23%;
+}
+
+.mainContent {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.subtitle {
+	font-weight: bold;
+	font-size: 32px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.mainContent-course-link {
+	height: 100px;
+	background-color: #FFF;
+	text-align: center;
+	margin: 1%;
+	transition: .3s;
+	box-shadow: 2px 2px 2px #CCC;
+	position: relative;
+}
+
+.mainContent-course-link a {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.mainContent-course-link:hover {
+	box-shadow: 4px 4px 4px #CCC;
+}
+
+.mainContent-course-link a:before {
+	content: '';
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: 10px auto;
+}
+
+.mainContent-course-link:nth-child(even) a:before {
+	background: url(../img/background1.svg) no-repeat;	
+}
+
+.mainContent-course-link:nth-child(odd) a:before {
+	background: url(../img/background2.svg) no-repeat;
+}
+
+@media(max-width: 768px) {
+  .mainContent-course {
+    flex-direction: column;
+  }
+
+  .mainContent-course-link {
+    width: 100%;
+  }
+}
+
+@media(min-width: 769px) {
+  .mainContent-course-link:nth-child(3n) {
+		margin-right: 0;
+	}
+
+	.mainContent-course-link:nth-child(3n+1) {
+		margin-left: 0;
+	}
+}
+
+@media(min-width: 1000px) {
+  .mainContent-course-link {
+		margin: 1.333%;
+	}
+
+	.mainContent-course-link:nth-child(3n) {
+		margin-right: 1.33%;
+	}
+
+	.mainContent-course-link:nth-child(3n+1) {
+		margin-left: 1.333%;
+	}
+
+	.mainContent-course-link:nth-child(4n) {
+		margin-right: 0;
+	}
+
+	.mainContent-course-link:nth-child(4n+1) {
+		margin-left: 0;
+	}
+}

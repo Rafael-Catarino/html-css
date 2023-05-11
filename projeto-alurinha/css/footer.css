@@ -1,0 +1,154 @@
+body {
+	background-color: #F2F5F7;
+	font-family: 'Open Sans',Arial,sans-serif;
+}
+
+.container {
+	width: 94%;
+	margin: 0 auto;
+}
+
+.footer {
+	background-color: #324C64;
+	padding-top: 20px;
+}
+
+.footer .subtitle {
+	color: #FFF;
+}
+
+.footer-navMap-link {
+	text-decoration: none;
+	color: #FFF;
+	margin-top: 10px;
+}
+
+.footer-navMap-link {
+	font-size: .9em;
+}
+
+.navmap-list-title {
+	font-weight: 700;
+	font-size: 1.3em;
+	margin: .9em 0;
+	padding-left: .3em;
+	padding-top: .2em;
+	padding-bottom: .2em;
+}
+
+.navmap-list-title + .footer-navMap-link {
+	margin-top: 0;
+}
+
+.navmap-list-title-bancoDeDados { color: #EC6E5A; border-left: 4px solid #EC6E5A; }
+.navmap-list-title-framework { color: #AD85BF; border-left: 4px solid #AD85BF; }
+.navmap-list-title-frontend { color: #5EC6F3; border-left: 4px solid #5EC6F3; }
+.navmap-list-title-backend { color: #25D285; border-left: 4px solid #25D285; }
+
+.footer-patrocinadores {
+	margin-top: 30px;
+	background: #F2F5F7;
+	padding: 20px 0;
+}
+
+.footer-contactForm {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.footer-contactForm label[for=email-contact] {
+	font-weight: bold;
+	font-size: 14px;
+	color: #000;
+	margin-bottom: 5px;
+	display: block;
+}
+
+.footer-contactForm-emailInput {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding: 10px;
+}
+
+.footer-contactForm-submit {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: #4DBA7A;
+	color: #FFF;
+	cursor: pointer;
+	
+}
+
+.footer-contactForm-submit,
+.footer-contactForm-emailInput {
+	outline: 0;
+	border: 1px solid #4DBA7A;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+.footer-contactForm-legend {
+	margin-bottom: 10px;
+}
+
+.footer-navMap-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 260px;
+}
+
+.footer-patrocinadores .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-patrocinadores-list {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 5%;
+  width: 70%; 
+}
+
+.footer-contactForm-fieldset {
+  display: flex;
+}
+
+@media(max-width: 768px) {
+  .footer-navMap-list {
+    height: auto;
+  }
+
+  .footer-patrocinadores .container {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-patrocinadores-list {
+    margin: auto;
+    width: 100%;
+  }
+
+  .footer-contactForm-fieldset {
+    justify-content: center;
+  }
+}
+
+@media(min-width: 769px) {
+
+	.container {
+		width: 85%;	
+	}
+
+	.subtitle {
+		text-align: left;
+	}
+
+	.footer-contactForm {
+		margin-top: 0;
+		text-align: left;
+	}
+}
+
+
