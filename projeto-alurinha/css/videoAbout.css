@@ -1,0 +1,62 @@
+.videoAbout .container {
+  display: flex;
+  flex-direction: row;
+}
+
+.videoAbout-about {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.videoAbout {
+  background-color: #5E9EDC;
+  padding: 25px 0;
+
+}
+
+.videoAbout-video {
+  max-width: 100%;
+}
+
+.videoAbout .container {
+  color: #FFF;
+}
+
+.videoAbout-sobre-title {
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+.videoAbout-about {
+  font-size: 1.3em;
+  line-height: 2;
+}
+
+.videoAbout-button {
+  border-radius: 8px;
+  background-color: #ec6e5a;
+  display: block;
+  color: #FFF;
+  border: none;
+  height: 50px;
+  font-size: .8em;
+  outline: none;
+}
+
+@media(max-width: 768px) {
+  .videoAbout .container {
+    flex-direction: column;
+  }
+
+  .videoAbout-video {
+    margin: auto;
+  }
+}
+
+@media(min-width: 1000px) {
+	.videoAbout-about {
+		margin-left: 1.5em;
+	}
+}
